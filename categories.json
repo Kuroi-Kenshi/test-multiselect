@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Cars",
+    "flags": ""
+  },
+  {
+    "id": 2,
+    "name": "Motorcycles",
+    "flags": ""
+  },
+  {
+    "id": 3,
+    "name": "Bicycles",
+    "flags": ""
+  },
+  {
+    "id": 4,
+    "name": "Scooters",
+    "flags": ""
+  },
+  {
+    "id": 5,
+    "name": "Airplanes",
+    "flags": ""
+  }
+]

@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Select component matches snapshot1 1`] = `
+<div
+  className="wrapper"
+>
+  <select
+    className="select"
+    data-event="{ \\"id\\": \\"1636919065175\\", \\"eventName\\": \\"Click on Select\\", \\"eventValue\\": \\"\\"}"
+    name="categories"
+    onChange={[Function]}
+    value=""
+  >
+    <option
+      className="title"
+      value=""
+    >
+       
+      Выберите категорию
+    </option>
+    <option
+      data-event="{ \\"id\\": \\"1636919065175\\", \\"eventName\\": \\"Parent category selected\\", \\"eventValue\\": {\\"id\\":1,\\"name\\":\\"Cars\\",\\"flags\\":\\"\\"}}"
+      key="1"
+      value={1}
+    >
+      Cars
+    </option>
+    <option
+      data-event="{ \\"id\\": \\"1636919065175\\", \\"eventName\\": \\"Parent category selected\\", \\"eventValue\\": {\\"id\\":2,\\"name\\":\\"Motorcycles\\",\\"flags\\":\\"\\"}}"
+      key="2"
+      value={2}
+    >
+      Motorcycles
+    </option>
+    <option
+      data-event="{ \\"id\\": \\"1636919065175\\", \\"eventName\\": \\"Parent category selected\\", \\"eventValue\\": {\\"id\\":3,\\"name\\":\\"Bicycles\\",\\"flags\\":\\"\\"}}"
+      key="3"
+      value={3}
+    >
+      Bicycles
+    </option>
+    <option
+      data-event="{ \\"id\\": \\"1636919065175\\", \\"eventName\\": \\"Parent category selected\\", \\"eventValue\\": {\\"id\\":4,\\"name\\":\\"Scooters\\",\\"flags\\":\\"\\"}}"
+      key="4"
+      value={4}
+    >
+      Scooters
+    </option>
+    <option
+      data-event="{ \\"id\\": \\"1636919065175\\", \\"eventName\\": \\"Parent category selected\\", \\"eventValue\\": {\\"id\\":5,\\"name\\":\\"Airplanes\\",\\"flags\\":\\"\\"}}"
+      key="5"
+      value={5}
+    >
+      Airplanes
+    </option>
+  </select>
+</div>
+`;
+
+exports[`should render Select component render without options 1`] = `
+<div
+  className="wrapper"
+>
+  <select
+    className="select"
+    data-event="{ \\"id\\": \\"1636919065193\\", \\"eventName\\": \\"Click on Select\\", \\"eventValue\\": \\"\\"}"
+    name="categories"
+    onChange={[Function]}
+    value=""
+  />
+</div>
+`;

@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "parent_id": 1,
+    "name": "AMG GT 43MATIC+",
+    "flags": ""
+  },
+  {
+    "id": 2,
+    "parent_id": 1,
+    "name": "Audi RS7",
+    "flags": ""
+  },
+  {
+    "id": 3,
+    "parent_id": 2,
+    "name": "YAMAHA YZF-R1M",
+    "flags": ""
+  },
+  {
+    "id": 4,
+    "parent_id": 2,
+    "name": "HONDA CB1000R BLACK EDITION",
+    "flags": ""
+  },
+  {
+    "id": 5,
+    "parent_id": 3,
+    "name": "Giant TCR ADVANCED 2 PC",
+    "flags": ""
+  },
+  {
+    "id": 6,
+    "parent_id": 3,
+    "name": "Giant CONTEND 3",
+    "flags": ""
+  },
+  {
+    "id": 7,
+    "parent_id": 3,
+    "name": "Giant CONTEND 5",
+    "flags": ""
+  },
+  {
+    "id": 8,
+    "parent_id": 4,
+    "name": "YYD ROBO Electric Kick Scooter",
+    "flags": ""
+  },
+  {
+    "id": 9,
+    "parent_id": 4,
+    "name": "Jetson Jupiter Kick Scooter for Kids",
+    "flags": ""
+  },
+  {
+    "id": 10,
+    "parent_id": 4,
+    "name": "Gotrax GXL V2 Commuting Electric",
+    "flags": ""
+  },
+  {
+    "id": 11,
+    "parent_id": 5,
+    "name": "Cirrus SR22-G5 TURBO GTS",
+    "flags": ""
+  },
+  {
+    "id": 12,
+    "parent_id": 5,
+    "name": "Dassault Falcon 2000LXS",
+    "flags": ""
+  },
+  {
+    "id": 13,
+    "parent_id": 5,
+    "name": "Gulfstream IV",
+    "flags": ""
+  }
+]
