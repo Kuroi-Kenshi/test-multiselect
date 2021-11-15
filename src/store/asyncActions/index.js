@@ -16,8 +16,8 @@ export const fetchCategories = () => {
     dispatch(getCategories({ loading: true }));
     new Promise((resolve, rejected) => {
       setTimeout(() => {
-        // resolve(categories);
-        rejected({ error: '500 server errorr' });
+        resolve(categories);
+        // rejected({ error: '500 server errorr' });
       }, [1000]);
     })
     .then(response => dispatch(getCategoriesSuccess(response)))
@@ -31,8 +31,8 @@ export const fetchItems = parentId => {
     dispatch(getCategoryItems({ loading: true }));
     new Promise((resolve, rejected) => {
       setTimeout(() => {
-        // resolve(items);
-        rejected({ error: '500 server errorr' });
+        resolve(items);
+        // rejected({ error: '500 server errorr' });
       }, [1000]);
     })
     .then(response => dispatch(getCategoryItemsSuccess(response)))
