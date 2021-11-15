@@ -1,5 +1,5 @@
 export const category = {
-  request: 'GET_CATEGORIES',
+  request: 'GET_CATEGORIES_REQUEST',
   success: 'GET_CATEGORIES_SUCCESS',
   failure: 'GET_CATEGORIES_FAILURE',
   add: 'ADD_CATEGORIES',
@@ -8,7 +8,7 @@ export const category = {
 };
 
 export const categoryItems = {
-  request: 'GET_CATEGORY_ITEMS',
+  request: 'GET_CATEGORY_ITEMS_REQUEST',
   success: 'GET_CATEGORY_SUCCESS',
   failure: 'GET_CATEGORY_FAILURE',
   add: 'ADD_CATEGORY_ITEMS',

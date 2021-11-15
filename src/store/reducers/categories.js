@@ -3,6 +3,7 @@ import { category } from '../constants';
 const defaultState = {
   data: [],
   loading: false,
+  errors: false,
 };
 
 const categories = (state = defaultState, action) => {
@@ -21,7 +22,8 @@ const categories = (state = defaultState, action) => {
     case category.failure:
       return {
         ...state,
-        errors: action.payload,
+        loading: false,
+        errors: action.payload.error,
       };
     case category.add:
       return {
@@ -29,7 +31,7 @@ const categories = (state = defaultState, action) => {
         data: [...action.payload],
       };
     case category.update:
-      const newState = state.map(category => {
+      const newState = state.data.map(category => {
         if (category.id === action.payload.id) {
           return payload;
         }

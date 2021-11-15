@@ -2,7 +2,7 @@ import React from 'react';
 import { eventGenerator } from '../../../utils/eventGenerator';
 import s from './Select.module.sass'
 
-const Select = ({ name, onChange, value, options, showTitle = false, loading }) => {
+const Select = ({ name, onChange, value, options = [], showTitle = false, loading }) => {
   return (
     <div className={s.wrapper}>
       <select
@@ -14,7 +14,7 @@ const Select = ({ name, onChange, value, options, showTitle = false, loading }) 
         disabled={loading}
       >
         {showTitle ? <option value="" className={s.title}> {loading ? "Загрузка данных" : "Выберите категорию"}</option> : false}
-        {options && options.map(item => {
+        {options.map(item => {
           return (
             <option key={item.id} value={item.id} data-event={eventGenerator("Parent category selected", item)}>{item.name}</option>
           )

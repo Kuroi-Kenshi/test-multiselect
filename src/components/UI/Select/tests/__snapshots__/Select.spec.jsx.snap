@@ -6,7 +6,7 @@ exports[`should render Select component matches snapshot1 1`] = `
 >
   <select
     className="select"
-    data-event="{ \\"id\\": \\"1636919065175\\", \\"eventName\\": \\"Click on Select\\", \\"eventValue\\": \\"\\"}"
+    data-event="{ \\"id\\": \\"1636955733180\\", \\"eventName\\": \\"Click on Select\\", \\"eventValue\\": \\"\\"}"
     name="categories"
     onChange={[Function]}
     value=""
@@ -19,35 +19,35 @@ exports[`should render Select component matches snapshot1 1`] = `
       Выберите категорию
     </option>
     <option
-      data-event="{ \\"id\\": \\"1636919065175\\", \\"eventName\\": \\"Parent category selected\\", \\"eventValue\\": {\\"id\\":1,\\"name\\":\\"Cars\\",\\"flags\\":\\"\\"}}"
+      data-event="{ \\"id\\": \\"1636955733180\\", \\"eventName\\": \\"Parent category selected\\", \\"eventValue\\": {\\"id\\":1,\\"name\\":\\"Cars\\",\\"flags\\":\\"\\"}}"
       key="1"
       value={1}
     >
       Cars
     </option>
     <option
-      data-event="{ \\"id\\": \\"1636919065175\\", \\"eventName\\": \\"Parent category selected\\", \\"eventValue\\": {\\"id\\":2,\\"name\\":\\"Motorcycles\\",\\"flags\\":\\"\\"}}"
+      data-event="{ \\"id\\": \\"1636955733180\\", \\"eventName\\": \\"Parent category selected\\", \\"eventValue\\": {\\"id\\":2,\\"name\\":\\"Motorcycles\\",\\"flags\\":\\"\\"}}"
       key="2"
       value={2}
     >
       Motorcycles
     </option>
     <option
-      data-event="{ \\"id\\": \\"1636919065175\\", \\"eventName\\": \\"Parent category selected\\", \\"eventValue\\": {\\"id\\":3,\\"name\\":\\"Bicycles\\",\\"flags\\":\\"\\"}}"
+      data-event="{ \\"id\\": \\"1636955733180\\", \\"eventName\\": \\"Parent category selected\\", \\"eventValue\\": {\\"id\\":3,\\"name\\":\\"Bicycles\\",\\"flags\\":\\"\\"}}"
       key="3"
       value={3}
     >
       Bicycles
     </option>
     <option
-      data-event="{ \\"id\\": \\"1636919065175\\", \\"eventName\\": \\"Parent category selected\\", \\"eventValue\\": {\\"id\\":4,\\"name\\":\\"Scooters\\",\\"flags\\":\\"\\"}}"
+      data-event="{ \\"id\\": \\"1636955733180\\", \\"eventName\\": \\"Parent category selected\\", \\"eventValue\\": {\\"id\\":4,\\"name\\":\\"Scooters\\",\\"flags\\":\\"\\"}}"
       key="4"
       value={4}
     >
       Scooters
     </option>
     <option
-      data-event="{ \\"id\\": \\"1636919065175\\", \\"eventName\\": \\"Parent category selected\\", \\"eventValue\\": {\\"id\\":5,\\"name\\":\\"Airplanes\\",\\"flags\\":\\"\\"}}"
+      data-event="{ \\"id\\": \\"1636955733180\\", \\"eventName\\": \\"Parent category selected\\", \\"eventValue\\": {\\"id\\":5,\\"name\\":\\"Airplanes\\",\\"flags\\":\\"\\"}}"
       key="5"
       value={5}
     >
@@ -63,7 +63,7 @@ exports[`should render Select component render without options 1`] = `
 >
   <select
     className="select"
-    data-event="{ \\"id\\": \\"1636919065193\\", \\"eventName\\": \\"Click on Select\\", \\"eventValue\\": \\"\\"}"
+    data-event="{ \\"id\\": \\"1636955733190\\", \\"eventName\\": \\"Click on Select\\", \\"eventValue\\": \\"\\"}"
     name="categories"
     onChange={[Function]}
     value=""

@@ -21,6 +21,7 @@ const items = (state = defaultState, action) => {
     case categoryItems.failure:
       return {
         ...state,
+        loading: false,
         errors: action.payload,
       };
     case categoryItems.add:
@@ -29,7 +30,7 @@ const items = (state = defaultState, action) => {
         data: action.payload,
       };
     case categoryItems.update:
-      const newState = state.map(category => {
+      const newState = state.data.map(category => {
         if (category.id === action.payload.id) {
           return payload;
         }

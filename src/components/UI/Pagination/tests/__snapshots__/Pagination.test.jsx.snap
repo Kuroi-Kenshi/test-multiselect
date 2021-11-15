@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Pagination component matches 1`] = `
+<div
+  className="pagination"
+  data-event="{ \\"id\\": \\"1636955733074\\", \\"eventName\\": \\"Click on pagination form\\", \\"eventValue\\": \\"\\"}"
+>
+  <button
+    className="btn"
+    onClick={[Function]}
+  >
+    <img
+      alt=""
+      className="leftArrow"
+      data-event="{ \\"id\\": \\"1636955733074\\", \\"eventName\\": \\"Prev page\\", \\"eventValue\\": \\"0\\"}"
+      src="test-file-stub"
+    />
+  </button>
+  <div
+    data-event="{ \\"id\\": \\"1636955733074\\", \\"eventName\\": \\"Click on pagination page number\\", \\"eventValue\\": \\"\\"}"
+  >
+    1
+     из 
+    5
+  </div>
+  <button
+    className="btn"
+    onClick={[Function]}
+  >
+    <img
+      alt=""
+      data-event="{ \\"id\\": \\"1636955733074\\", \\"eventName\\": \\"Next page\\", \\"eventValue\\": \\"2\\"}"
+      src="test-file-stub"
+    />
+  </button>
+</div>
+`;

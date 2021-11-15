@@ -4,6 +4,8 @@ import {
   getCategoryItems,
   getCategoriesSuccess,
   getCategoryItemsSuccess,
+  getCategoriesFailure,
+  getCategoryItemsFailure,
 } from '../actions';
 import categories from '../../../categories.json';
 import items from '../../../categoriesItem.json';
@@ -12,13 +14,14 @@ export const fetchCategories = () => {
   return async dispatch => {
     // const response = await axios.get('http://localhost:7070/categories');
     dispatch(getCategories({ loading: true }));
-    const response = await new Promise(resolve => {
+    new Promise((resolve, rejected) => {
       setTimeout(() => {
-        resolve(categories);
+        // resolve(categories);
+        rejected({ error: '500 server errorr' });
       }, [1000]);
-    }).catch(e => dispatch(getCategoryFailure(e)));
-
-    dispatch(getCategoriesSuccess(response));
+    })
+    .then(response => dispatch(getCategoriesSuccess(response)))
+    .catch(e => dispatch(getCategoriesFailure(e)));
   };
 };
 
@@ -26,12 +29,13 @@ export const fetchItems = parentId => {
   return async dispatch => {
     // const response = await axios.get(`http://localhost:7070/items/${parentId}`);
     dispatch(getCategoryItems({ loading: true }));
-    const response = await new Promise(resolve => {
+    new Promise((resolve, rejected) => {
       setTimeout(() => {
-        resolve(items);
+        // resolve(items);
+        rejected({ error: '500 server errorr' });
       }, [1000]);
-    }).catch(e => dispatch(getCategoryItemsFailure(e)));
-
-    dispatch(getCategoryItemsSuccess(response));
+    })
+    .then(response => dispatch(getCategoryItemsSuccess(response)))
+    .catch(e => dispatch(getCategoryItemsFailure(e)));
   };
 };
