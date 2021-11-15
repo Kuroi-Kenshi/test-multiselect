@@ -13,7 +13,7 @@ import items from '../../../categoriesItem.json';
 export const fetchCategories = () => {
   return async dispatch => {
     // const response = await axios.get('http://localhost:7070/categories');
-    dispatch(getCategories({ loading: true }));
+    dispatch(getCategories());
     new Promise((resolve, rejected) => {
       setTimeout(() => {
         resolve(categories);
@@ -28,7 +28,7 @@ export const fetchCategories = () => {
 export const fetchItems = parentId => {
   return async dispatch => {
     // const response = await axios.get(`http://localhost:7070/items/${parentId}`);
-    dispatch(getCategoryItems({ loading: true }));
+    dispatch(getCategoryItems());
     new Promise((resolve, rejected) => {
       setTimeout(() => {
         resolve(items);
