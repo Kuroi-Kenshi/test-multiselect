@@ -14,10 +14,6 @@ const MultiSelect = ({ name, value, onChange, items, parentId, loading }) => {
 
   useOutsideClick(listRef, setShowList);
 
-  const onFocus = () => {
-    if (items.length) setShowList(true);
-  }
-
   useEffect(() => {
     if (parentId) {
       setCurrentPage(1);
@@ -26,6 +22,11 @@ const MultiSelect = ({ name, value, onChange, items, parentId, loading }) => {
       currentItems = [];
     }
   }, [parentId]);
+
+
+  const onFocus = () => {
+    if (items.length) setShowList(true);
+  }
 
   const placeholderCreator = () => {
     if (parentId && !loading) {
@@ -37,13 +38,13 @@ const MultiSelect = ({ name, value, onChange, items, parentId, loading }) => {
     }
   }
 
-  const indexOfLastPost = currentPage * itemsPerPage;
-  const indexOfFirstPost = indexOfLastPost - itemsPerPage;
-  let currentItems = items.slice(indexOfFirstPost, indexOfLastPost);
-
   const pagiante = (number) => {
     setCurrentPage(number);
   };
+
+  const indexOfLastPost = currentPage * itemsPerPage;
+  const indexOfFirstPost = indexOfLastPost - itemsPerPage;
+  let currentItems = items.slice(indexOfFirstPost, indexOfLastPost);
 
   return (
     <div className={s.wrapper}>

@@ -1,4 +1,3 @@
-import axios from 'axios';
 import {
   getCategories,
   getCategoryItems,
@@ -12,7 +11,6 @@ import items from '../../../categoriesItem.json';
 
 export const fetchCategories = () => {
   return async dispatch => {
-    // const response = await axios.get('http://localhost:7070/categories');
     dispatch(getCategories());
     new Promise((resolve, rejected) => {
       setTimeout(() => {
@@ -27,7 +25,6 @@ export const fetchCategories = () => {
 
 export const fetchItems = parentId => {
   return async dispatch => {
-    // const response = await axios.get(`http://localhost:7070/items/${parentId}`);
     dispatch(getCategoryItems());
     new Promise((resolve, rejected) => {
       setTimeout(() => {

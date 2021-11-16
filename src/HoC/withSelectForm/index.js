@@ -20,6 +20,15 @@ export const withSelectFrom = Component => {
       ? multiselectData[selectedCategory].map(el => el.name)
       : [];
 
+
+    useEffect(() => {
+      if (categories.length) {
+        const defaultObj = {};
+        categories.forEach(category => (defaultObj[category.id] = []));
+        setMultiselectData(defaultObj);
+      }
+    }, [categories]);
+
     const onChangeMultiselect = useCallback((item, parentId) => {
       const itemInArray = multiselectData[parentId].some(el => el.id === item.id);
       if (!itemInArray) {
@@ -29,14 +38,6 @@ export const withSelectFrom = Component => {
         setMultiselectData(prev => ({ ...prev, [parentId]: parentItems }));
       }
     });
-
-    useEffect(() => {
-      if (categories.length) {
-        const defaultObj = {};
-        categories.forEach(category => (defaultObj[category.id] = []));
-        setMultiselectData(defaultObj);
-      }
-    }, [categories]);
 
     const onChangeSelect = useCallback(e => {
       const parentId = e.target.value;
